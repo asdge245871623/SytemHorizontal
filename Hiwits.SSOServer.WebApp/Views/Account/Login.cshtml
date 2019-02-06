@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<form method="post" action="/account/login">
+    <label>用户名</label> <input type="text" name="username" />
+    <label>密码</label> <input type="text" name="password" />
+    <input type="hidden" name="ReturnUrl" value="@Request.QueryString["ReturnUrl"]" />
+    <button>登录</button>
+</form>
